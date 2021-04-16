@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Job Application Form</title>
+</head>
+
+
+<h2>Job Application Form</h2>
+
+<body>
+		<form>
+		<fieldset>
+		<legend>Account</legend>
+		<div class="field">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+	</fieldset>
+	
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>First name:</label> 
+			<input type="text" name="firstname">
+		</div>
+			<div class="field">
+			<label>Last name:</label> 
+			<input type="text" name="lastname">
+		</div>
+		<div class="field">
+			<label>Street Address:</label> 
+			<input type="text" name="street">
+		</div>
+		<div class="field">
+			<label>City:</label> 
+			<input type="text" name="city">
+		</div>
+		<div class="field">
+			
+	</fieldset>			
+	
+	<fieldset>
+		<legend>More personal information</legend>
+		<div class="field">
+			<label>Gender:</label><br>
+	
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label><br>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label><br>
+				<input type="radio" id="other" name="gender" value="other">
+				<label for="other">Other</label><br>
+			
+		</div>
+		<div class="field">
+			<label for="phone">Enter a phone number:</label><br><br>
+  			<input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+  			<small>Format: 012-345-6789</small><br><br>
+		</div>
+		
+		<div class="field">
+			<label>Enter your email address:</label><br>
+			<input type ="email" id ="email" name ="email">
+		</div>
+		
+		<div>
+		<div class="field">
+			<label>Select Your Birthday:</label><br>
+			<input type="date" id=birthday name ="birthday">
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Transportation</legend>
+		<div class="field">
+			<label>What transportation do you use on the way to work</lable><br>
+			<input type="checkbox" name="vehicle" value="Bike">I bike to work<br>
+			<input type="checkbox" name="vehicle" value="Car">I drive to work<br>
+			<input type="checkbox" name="vehicle" value ="Walk">I walk to work<br>
+			<input type="checkbox" name="vehicle" value ="Bus">I take buses to work<br>
+		</div>	 
+		</fieldset>
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class ="field">
+			<label>Why you have a passion on this company?</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Which position you are interested in?</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+	</fieldset>
+	
+	<fieldset>	
+		<legend>Job Availability</legend>
+		<div class="field">
+		<label>Could you take remote mode of working or no?</label><br>
+		<input type="radio" name="answer" value="yes"> Yes<br> 
+		<input type="radio" name="answer" value="no"> No <br>
+		</div>	
+		
+		<div class="field">
+			<label>What type of position are you seeking? (check one option)</label><br>
+			<select name="jobs"> 
+				<option value="Part-time">Part-time</option> 
+				<option value="Full-time">Full-time</option> 
+				<option value="temporary">Temporary</option>
+				</select> <br>
+		</div>
+	<fieldset>
+	
+				
+			
+		<input type="submit" value="Submit form"> <br>
+</form>
+</body>
+</html>
